@@ -1,0 +1,12 @@
+# Environment variables
+.env 
+src/env 
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code
+.vscode/
+
