@@ -13,3 +13,6 @@ __pycache__/
 # Project folder
 project/
 
+# AWS credentials
+.aws/
+aws.credentials
