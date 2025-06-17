@@ -1,12 +1,15 @@
+output "glue_job_name" {
+  description = "Name of the created Glue job"
+  value       = aws_glue_job.spotify_api_ingestion_etl_job.name
+}
+
+output "glue_job_arn" {
+  description = "ARN of the created Glue job"
+  value       = aws_glue_job.spotify_api_ingestion_etl_job.arn
+}
+
 output "glue_role_arn" {
-  value = aws_iam_role.glue_role.arn
-}
-
-output "glue_api_new_releases_extract_job" {
-  value = aws_glue_job.api_new_releases_ingestion_etl_job.name
-}
-
-output "glue_albums_tracks_extract_job" {
-  value = aws_glue_job.api_albums_tracks_ingestion_etl_job.name
+  description = "ARN of the IAM role used by the Glue job"
+  value       = aws_iam_role.glue_role.arn
 }
 

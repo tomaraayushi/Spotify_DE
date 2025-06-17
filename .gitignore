@@ -13,6 +13,19 @@ __pycache__/
 # Project folder
 project/
 
+# Creds folder
+creds/
+
 # AWS credentials
 .aws/
 aws.credentials
+
+# AWS Secrets Manager
+creds/
+*_cred.json
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl

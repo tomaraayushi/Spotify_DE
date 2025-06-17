@@ -3,14 +3,14 @@ variable "project"{
     description = "Project name"
 }
 
+variable "environment" {
+    type = string
+    description = "Environment name"
+    default = "dev"
+}
 variable "region" {
     type = string
     description = "AWS Region"
-}
-
-variable "public_subnet_a_id" {
-    type = string
-    description = "Private subnet A ID"
 }
 
 variable "data_lake_bucket" {
@@ -20,6 +20,6 @@ variable "data_lake_bucket" {
 
 variable "scripts_bucket" {
     type = string
-    description = "Data Lake Bucket Name"
+    description = "Scripts Bucket Name"
 }
 

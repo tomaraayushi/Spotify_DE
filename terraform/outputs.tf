@@ -3,14 +3,22 @@ output "project" {
 }
 
 # Extract module
-output "glue_api_new_releases_extract_job" {
-  value = module.extract_job.glue_api_new_releases_extract_job
+output "glue_extract_job_name" {
+  value = module.extract_job.glue_job_name
 }
 
-output "glue_albums_tracks_extract_job" {
-  value = module.extract_job.glue_albums_tracks_extract_job
+output "glue_extract_job_arn" {
+  value = module.extract_job.glue_job_arn
+}
+
+output "glue_extract_role_arn" {
+  value = module.extract_job.glue_role_arn
 }
 
 output "glue_role_arn" {
   value = module.extract_job.glue_role_arn
+}
+
+output "region" {
+  value = var.region
 }
